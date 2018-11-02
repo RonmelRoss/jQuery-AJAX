@@ -1,5 +1,5 @@
 <?php  
- $connect = mysqli_connect("localhost", "root", "", "ajax_live_add_delete");  
+ $connect = mysqli_connect("localhost", "root", "", "test1");  
  $output = '';  
  $sql = "SELECT * FROM tbl_sample ORDER BY id DESC";  
  $result = mysqli_query($connect, $sql);  
@@ -19,8 +19,8 @@
            $output .= '  
                 <tr>  
                      <td>'.$row["id"].'</td>  
-                     <td class="first_name" data-id1="'.$row["id"].'" contenteditable>'.$row["first_name"].'</td>  
-                     <td class="last_name" data-id2="'.$row["id"].'" contenteditable>'.$row["last_name"].'</td>  
+                     <td class="first_name" data-id1="'.$row["id"].'" contenteditable="true">'.$row["first_name"].'</td>  
+                     <td class="last_name" data-id2="'.$row["id"].'" contenteditable="true">'.$row["last_name"].'</td>  
                      <td><button type="button" name="delete_btn" data-id3="'.$row["id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
            ';  
@@ -28,8 +28,8 @@
       $output .= '  
            <tr>  
                 <td></td>  
-                <td id="first_name" contenteditable></td>  
-                <td id="last_name" contenteditable></td>  
+                <td id="first_name" contenteditable="true"></td>  
+                <td id="last_name" contenteditable="true"></td>  
                 <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>  
            </tr>  
       ';  

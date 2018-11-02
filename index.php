@@ -63,7 +63,7 @@
                 data:{id:id, text:text, column_name:column_name},  
                 dataType:"text",  
                 success:function(data){  
-                     alert(data);  
+                     //alert(data);  
                 }  
            });  
       }  

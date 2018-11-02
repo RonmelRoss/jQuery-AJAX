@@ -1,5 +1,5 @@
 <?php  
- $connect = mysqli_connect("localhost", "root", "", "ajax_live_add_delete");  
+ $connect = mysqli_connect("localhost", "root", "", "test1");  
  $id = $_POST["id"];  
  $text = $_POST["text"];  
  $column_name = $_POST["column_name"];  
