@@ -19,7 +19,8 @@
            $output .= '  
                 <tr>  
                      <td>'.$row["id"].'</td>  
-                     <td class="first_name" data-id1="'.$row["id"].'" contenteditable="true">'.$row["first_name"].'</td>  
+                     
+                     <td class="first_name" data-id1="'.$row["id"].'"><div contenteditable="true">'.$row["first_name"].'</div></td>
                      <td class="last_name" data-id2="'.$row["id"].'" contenteditable="true">'.$row["last_name"].'</td>  
                      <td><button type="button" name="delete_btn" data-id3="'.$row["id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
